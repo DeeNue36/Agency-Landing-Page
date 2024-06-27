@@ -22,3 +22,22 @@
     /* font-family: "Fraunces", serif; */
     /* font-family: "Barlow", sans-serif; */
 }
+
+header{
+    background-image: url('images/desktop/image-header.jpg');
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links li{
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+}
