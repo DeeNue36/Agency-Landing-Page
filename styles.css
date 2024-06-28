@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
+    /* Font Family */
+    --heading-family: "Fraunces", serif;
+    --body-family: "Barlow", sans-serif;
+    /* Primary Colors */
     --active-state-red: hsl(7, 99%, 70%);
     --active-state-yellow: hsl(51, 100%, 49%);
     --graphic-design-text: hsl(167, 40%, 24%);
@@ -19,25 +23,72 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Fraunces", serif; */
-    /* font-family: "Barlow", sans-serif; */
 }
 
 header{
     background-image: url('images/desktop/image-header.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .navbar{
     display: flex;
     justify-content: space-between;
+    padding: 25px 15px;
+    font-family: var(--body-family);
+    /* font-size: 18px; */
 }
 
 .nav-links{
     display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .nav-links li{
     justify-content: space-between;
     list-style: none;
+}
+
+.nav-links li a{
     text-decoration: none;
+    color: var(--white);
+    padding: 0 18px;
+}
+
+.nav-links li a button{
+    outline: none;
+    border: none;
+    background-color: var(--white);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: var(--heading-family);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav-links li a button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+}
+
+.hero-header{
+    font-family: var(--heading-family);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 40px;
+    color: var(--white);
+    text-align: center;
+    margin-top: 45px;
+}
+
+.arrow-down{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 }
