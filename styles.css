@@ -214,7 +214,9 @@ header{
     gap: 20px;
 }
 
-.client-testimonial-1, .client-testimonial-2, .client-testimonial-3{
+.client-testimonial-1, 
+.client-testimonial-2, 
+.client-testimonial-3 {
     display: grid;
     justify-items: center;
     gap: 10px;
@@ -277,7 +279,7 @@ header{
 }
 
 .footer-navbar{
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .footer-navlinks{
@@ -299,5 +301,25 @@ header{
 
 .footer-navlinks li a:hover{
     color: var(--white);
+}
+
+.social-icons{
+    padding: 60px 0px 30px;
+}
+
+.social-icons-facebook, 
+.social-icons-instagram, 
+.social-icons-twitter, 
+.social-icons-pinterest {
+    fill: var(--footer-text);
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.social-icons-facebook:hover, 
+.social-icons-instagram:hover, 
+.social-icons-twitter:hover, 
+.social-icons-pinterest:hover {
+    fill: var(--white);
 }
 
