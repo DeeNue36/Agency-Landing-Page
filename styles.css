@@ -30,6 +30,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /* Header & Navbar Styling */
 header{
     background-image: url('images/desktop/image-header.jpg');
@@ -37,6 +41,7 @@ header{
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100vw;
 }
 
 .navbar{
@@ -109,6 +114,7 @@ header{
 
 .about-content {
     padding: 120px 106px 0px;
+    width: 49.4vw;
 }
 
 .about-header{
@@ -120,7 +126,7 @@ header{
 .about-text{
     font-family: var(--body-family);
     padding: 20px 0px 40px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .about-button-transform, .about-button-standout{
@@ -150,22 +156,24 @@ header{
 
 .about-image-transform, .about-image-standout {
     height: 500px;
+    width: 49.4vw;
 }
 
 .about-image-transform img, .about-image-standout img{
-    width: 613px;
+    /* width: 613px; */
+    width: 49.4vw;
     height: 500px;
 }
 
 /* Services Section Styling */
 .graphic-design{
     background-image: url('images/desktop/image-graphic-design.jpg');
+    background-position: center center;
     background-size: cover;
     height: 500px;
     align-content: end;
     padding: 0px 80px 40px;
     color: var(--graphic-design-text);
-
 }
 
 .graphics-services-header{
@@ -184,6 +192,7 @@ header{
 
 .photography{
     background-image: url('images/desktop/image-photography.jpg');
+    background-position: center center;
     background-size: cover;
     height: 500px;
     padding: 0px 80px 40px;
@@ -321,5 +330,57 @@ header{
 .social-icons-twitter:hover, 
 .social-icons-pinterest:hover {
     fill: var(--white);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1020px) {
+    .about-content {
+        padding: 100px 106px 0px;
+    }
+    .graphics-services-header{
+        padding-bottom: 25px;
+    }
+    .graphics-services-text, .photography-services-text{
+        padding: 0px 30px;
+    }
+    .photography-services-header{
+        padding-bottom: 22.5px;
+    }
+    .client-testimonials{
+        padding: 50px 80px 120px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .client-testimonials{
+        padding: 50px 60px 120px;
+    }
+}
+
+@media screen and (max-width: 852px){
+    .about-container{
+        grid-template-columns: auto;
+    }
+    .about-content{
+        width: 100vw;
+        padding: 100px 106px;
+    }
+    .about-image-transform, .about-image-standout {
+        width: 100vw;
+    }
+    
+    .about-image-transform img, .about-image-standout img{
+        width: 100vw;
+    }
+    .graphic-design{
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .photography{
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
 }
 
