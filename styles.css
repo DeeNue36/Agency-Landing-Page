@@ -528,7 +528,8 @@ header{
         left: -130px;
         text-align: center;
     }
-    .nav-links li a{
+    .nav-links li a button{
+        display: block;
         text-align: center;
         margin: auto;
     }
