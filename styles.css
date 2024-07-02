@@ -526,11 +526,11 @@ header{
     .nav-links{
         top: 50px;
         left: -130px;
+        text-align: center;
         /* padding: 40px 40px; */
     }
     /* .nav-links li a button{
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        
     } */
 
     /* About section inner sections */
