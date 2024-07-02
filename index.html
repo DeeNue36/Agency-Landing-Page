@@ -12,29 +12,36 @@
     <link rel="stylesheet" href="styles.css">
     <title>Agency Landing Page</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <a href="index.html" class="logo">
                 <img src="images/logo.svg" alt="logo" class="logo-img">
             </a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li>
-                    <a href="#contact">
-                        <button>Contact</button>
-                    </a>
-                </li>
 
-                <!-- Mobile Menu Icon -->
-                <div class="mobile-menu-icon">
-                    <img src="images/icon-hamburger.svg" class="hamburger" alt="Menu">
-                </div>
+            <div class="dropdown" id="navbar-mobile">
+               <ul class="nav-links" id="navlinks-mobile">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li>
+                        <a href="#contact">
+                            <button>Contact</button>
+                        </a>
+                    </li>
 
-                
-            </ul>
+                </ul> 
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <div class="mobile-menu-icon">
+                <img src="images/icon-hamburger.svg" 
+                class="hamburger" 
+                alt="Menu" 
+                onclick="openNav()">
+            </div>
+
         </nav>
 
         <h2 class="hero-header">
@@ -65,7 +72,13 @@
 
                 <!-- About Image -->
                 <div class="about-image-transform">
-                    <img src="images/desktop/image-transform.jpg" alt="transform-image">
+                    <img src="images/desktop/image-transform.jpg" 
+                    class="transform-image-desktop"
+                    alt="transform-image">
+
+                    <img src="images/mobile/image-transform.jpg" 
+                    class="transform-image-mobile"
+                    alt="transform-image-mobile">
                 </div>
             </div>
             
@@ -73,7 +86,13 @@
             <!-- Reversed about section with image first -->
             <div class="standout">
                 <div class="about-image-standout">
-                    <img src="images/desktop/image-stand-out.jpg" alt="standout-image">
+                    <img src="images/desktop/image-stand-out.jpg" 
+                    class="standout-image-desktop"
+                    alt="standout-image">
+
+                    <img src="images/mobile/image-stand-out.jpg" 
+                    class="standout-image-mobile"
+                    alt="standout-image-mobile">
                 </div>
     
                 <div class="about-content">
@@ -172,11 +191,21 @@
 
     <!-- Image Gallery -->
     <section id="projects">
+        <!-- Image gallery desktop -->
         <div class="image-gallery">
             <img src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles">
             <img src="images/desktop/image-gallery-orange.jpg" alt="Orange in a bowl">
             <img src="images/desktop/image-gallery-cone.jpg" alt="Ice-Cream cone">
             <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar cubes">
+
+        </div>
+
+        <!-- Image gallery mobile -->
+        <div class="image-gallery-mobile">
+            <img src="images/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles">
+            <img src="images/mobile/image-gallery-orange.jpg" alt="Orange in a bowl">
+            <img src="images/mobile/image-gallery-cone.jpg" alt="Ice-Cream cone">
+            <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar cubes">
 
         </div>
     </section>
@@ -227,5 +256,6 @@
         </div>
     </footer>
     
+    <script src="agency.js"></script>
 </body>
 </html>
