@@ -559,6 +559,10 @@ header{
     }
 
     /* Services section */
+    .our-services {
+        align-content: end;
+        justify-content: end;
+    }    
     .graphic-design{
         background-image: url('images/mobile/image-graphic-design.jpg');
         background-position: top;
