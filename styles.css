@@ -581,6 +581,9 @@ header{
         flex-direction: column;
         justify-content: end;
     }
+    .graphics-services-text, .photography-services-text{
+        padding: 0px 15px;
+    }
 
     /* Projects section */
     .image-gallery{
