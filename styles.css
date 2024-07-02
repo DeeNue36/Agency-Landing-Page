@@ -527,11 +527,11 @@ header{
         top: 50px;
         left: -130px;
         text-align: center;
-        /* padding: 40px 40px; */
     }
-    /* .nav-links li a button{
-        
-    } */
+    .nav-links li a{
+        text-align: center;
+        margin: auto;
+    }
 
     /* About section inner sections */
     .transform, .standout{
