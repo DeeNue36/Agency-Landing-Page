@@ -1,16 +1,5 @@
-// function openNav(){
-//     document.getElementById("navbar-mobile").style.width = "50%";
-//     document.getElementById("navlinks-mobile").style.display = "flex";
-    
-// }
+// When the user clicks on the button, toggle between hiding and showing the dropdown content //
 
-// function closeNav(){
-//     document.getElementById("navbar-mobile").style.width = "";
-      
-// }
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
 function openNav() {
   document.getElementById("navlinks-mobile").classList.toggle("show");
 }
