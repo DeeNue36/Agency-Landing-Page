@@ -528,13 +528,10 @@ header{
         left: -130px;
         /* padding: 40px 40px; */
     }
-    .nav-links li a button{
-        margin: 0;
-        /* position: absolute;
-        top: 50%; */
+    /* .nav-links li a button{
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-    }
+    } */
 
     /* About section inner sections */
     .transform, .standout{
